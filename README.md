@@ -78,17 +78,28 @@ You can tune the simulation parameters at the top of the file:
 
 ```
 --- DETAILED STATE COMPARISON ---
+Ideal results (1000 shots): {'101': 44, '001': 211, '010': 197, '011': 226, '100': 37, '000': 219, '110': 33, '111': 33}
+
+Results with 5% noise: {'011': 201, '010': 204, '001': 230, '101': 39, '000': 219, '111': 33, '100': 42, '110': 32}
+
+--- DETAILED STATE COMPARISON ---
 State        | Ideal (%)    | With 5% Noise (%)
 ----------------------------------------------
-   000       |    85.3%     |      71.2%
-   001       |     0.0%     |       4.1%
-   ...
+   000       |     21.9%     |       21.9%
+   001       |     21.1%     |       23.0%
+   010       |     19.7%     |       20.4%
+   011       |     22.6%     |       20.1%
+   100       |      3.7%     |        4.2%
+   101       |      4.4%     |        3.9%
+   110       |      3.3%     |        3.2%
+   111       |      3.3%     |        3.3%
 
 --- BOB'S RECEIVED MESSAGE (Qubit 2) ---
 Measurement  | Ideal (%)    | With 5% Noise (%)
 ----------------------------------------------
-Received '0' |    85.3%     |      68.7%
-Received '1' |    14.7%     |      31.3%
+Received '0'  |     85.3%     |       85.4%
+Received '1'  |     14.7%     |       14.6%
+----------------------------------------------
 ```
 <img width="1791" height="602" alt="image" src="https://github.com/user-attachments/assets/92988b9e-c52a-48cb-bd2e-de4a768c1889" />
 
